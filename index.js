@@ -31,7 +31,7 @@ A('Running');
 stream.on('data', (event) => {
   if (event.retweeted_status == null
     && event.in_reply_to_status_id == null
-    && event.in_reply_to_user_id) {
+    && event.in_reply_to_user_id == null) {
     T('NewTweetObj: %O', event);
 
     const embedLink = `https://twitter.com/${event.user.screen_name}/status/${event.id_str}`;
