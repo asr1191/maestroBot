@@ -28,6 +28,7 @@
     "debug": "^3.1.0",
     "discord.js": "^11.3.2",
     "dotenv": "^6.0.0",
+    "foreman": "3.0.1",
     "nodemon": "^1.17.5",
     "twitter": "^1.7.1"
   }
