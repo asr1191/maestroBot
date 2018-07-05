@@ -14,6 +14,7 @@ const client = new Twitter({
   access_token_secret: process.env.TWITTER_TOKEN_SECRET,
 });
 
+// TODO support for multiple webhooks
 const discordHook = new Discord.WebhookClient(process.env.HOOK_ID, process.env.HOOK_TOKEN);
 
 function executeHook(message) {
